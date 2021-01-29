@@ -5,7 +5,7 @@ import patchIt from './modules/discordPathChanger';
 
 const logger = new Logger();
 
-if(os.platform() !== 'win32') {
+if(os.platform() !== 'Darwin') {
     logger.warn('Esta aplicação não é feita pro seu sistema operacional.');
     process.exit();
 }
@@ -35,6 +35,7 @@ const question = async () => {
             term.clear();
             await logger.proc('O código-fonte e atualizações deste programa podem ser encontrados em: https://github.com/AlevEve/Dopple');
             await logger.proc("Créditos: Chinês // Banca Lab's.");
+            await logger.proc("Créditos: S0n1x | Code Mac ");
 
             term.clear();
 
